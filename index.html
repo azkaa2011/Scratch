@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id" oncontextmenu="return false;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+        body {
+            user-select: none;
+            -webkit-tap-highlight: none;
+            outline: none;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://feeldreams.github.io/bromo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        body::after {
+            content: "\00A9\2009\0032\0036\0020\004D\0065\0069\2009\0032\0030\0032\0034";
+            color: white;
+            opacity: .25;
+            font-weight: 500;
+            font-size: 13px;
+            position: fixed;
+            bottom: 22px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        iframe {
+            
+            margin-top: -55px;
+            width: 357px; /* Ukuran iframe */
+            height: 315px; /* Ukuran iframe */
+            border: none;
+            border-radius: 8px;
+        }
+
+        .logo {
+            margin-left: 10px;
+            position: fixed;
+            margin-top: 55px; /* Atur posisi vertikal logo */
+            width: 100px; /* Ukuran logo */
+            height: 100px;
+            border-radius: 50%;
+            background-image: url('https://azkaa2011.github.io/azkaarrodhi.github.io/IMG_20241005_160902.jpg'); /* Ganti URL_LOGO dengan URL logo yang diinginkan */
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 3;
+            animation: moveUpDown 2.5s ease-in-out infinite;
+}
+
+/* Keyframes untuk animasi */
+@keyframes moveUpDown {
+    0% {
+      top: -5px; /* Mulai di posisi atas */
+    }
+    50% {
+      top: 5px; /* Bergerak ke bawah */
+    }
+    100% {
+      top: -5px; /* Kembali ke posisi atas */
+    }
+        }
+    
+    h1 {
+    position: absolute; /* Untuk memungkinkan pengaturan posisi spesifik */
+    bottom: -11px; /* Menempatkan elemen 10px dari bawah */
+    left: 18px; /* Menempatkan elemen 10px dari kiri */
+    color: rgba(177, 177, 177, 0.15);
+    letter-spacing: -2px;
+    font-family: "yuji mai", serif;
+}
+    </style>
+       <script>
+        // Deteksi ukuran layar
+        if (window.innerWidth > 480) {
+            // Ubah URL di bawah ini sesuai kebutuhan
+            window.location.href = "about:blank";
+        }
+    </script>
+</head>
+<body>
+    <div class="logo"></div>
+    <iframe src="https://scratch.mit.edu/projects/1026940287/embed" allowtransparency="true"></iframe>
+    <h1>AZKA</h1>
+</body>
+</html>
